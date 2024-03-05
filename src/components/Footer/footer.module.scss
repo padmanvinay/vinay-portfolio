@@ -1,0 +1,17 @@
+.footer {
+  display: flex;
+  align-items: center;
+  font-size: small;
+  background-color: #f5f3f0;
+  justify-content: space-between;
+  &_content {
+    &_left {
+      font-family: "poppins";
+      margin-left: 1rem;
+    }
+    &_right {
+      font-family: "poppins";
+      margin-right: 1rem;
+    }
+  }
+}

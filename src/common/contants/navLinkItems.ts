@@ -7,13 +7,13 @@ export const NAV_LINK_ITEMS: NavItem[] = [
     path: "home",
   },
   {
-    name: "contact",
-    displayName: "Contact",
-    path: "contact",
-  },
-  {
     name: "work",
     displayName: "Work",
     path: "work",
+  },
+  {
+    name: "contact",
+    displayName: "Contact",
+    path: "contact",
   },
 ];

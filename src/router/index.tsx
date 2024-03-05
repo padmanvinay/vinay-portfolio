@@ -7,7 +7,7 @@ import App from "../App";
 import Home from "../pages/Home";
 import Contact from "../pages/Contact";
 import Work from "../pages/Work";
-import Header from "@/components/Header";
+import PageContent from "@/components/PageContent";
 
 const router = createBrowserRouter([
   {
@@ -15,7 +15,7 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       {
-        element: <Header />,
+        element: <PageContent />,
         children: [
           {
             element: <Navigate to="home" />,
@@ -25,13 +25,14 @@ const router = createBrowserRouter([
             path: "home",
             element: <Home />,
           },
-          {
-            path: "contact",
-            element: <Contact />,
-          },
+
           {
             path: "work",
             element: <Work />,
+          },
+          {
+            path: "contact",
+            element: <Contact />,
           },
         ],
       },
