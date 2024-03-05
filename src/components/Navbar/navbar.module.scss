@@ -1,0 +1,13 @@
+/* Navbar styling */
+.navbar {
+  padding: 0.2rem 1rem;
+  border-radius: 1rem;
+  border: 0.01rem solid transparent;
+  transition: border-color 0.3s ease;
+  &:hover {
+    border-color: black;
+  }
+  &.active {
+    border-color: black;
+  }
+}

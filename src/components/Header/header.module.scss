@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #f5f3f0;
+  height: 4rem;
+  align-items: center;
+
+  &_name {
+    margin-left: 1rem;
+    font-family: "poppins";
+    font-weight: 600;
+  }
+  &_routes {
+    display: flex;
+    flex-direction: row;
+    margin-right: 1.2rem;
+    font-family: "poppins";
+    font-weight: 400;
+    gap: 1.2rem;
+  }
+}
