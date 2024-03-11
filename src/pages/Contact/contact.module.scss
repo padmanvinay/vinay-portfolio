@@ -7,23 +7,63 @@
   transform: translate3d(-50%, -50%, 0);
   position: absolute;
   width: 100%;
+  color: var(--word);
+
   .contact_container {
     filter: grayscale(100%);
     transition: all 0.4s ease;
+
     &:hover {
       filter: grayscale(0%);
     }
   }
+
   &_buttons {
     display: flex;
     gap: 6rem;
     margin-top: 5rem;
     font-size: 1.5rem;
     font-weight: 600;
+    color: var(--word);
+
     .icon {
       display: flex;
       justify-content: center;
       padding-bottom: 1rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .contact {
+      padding: 0 20px;
+      top: 10%;
+      transform: translate3d(-50%, 0, 0);
+    }
+
+    .contact_buttons {
+      flex-direction: column;
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+  }
+
+  @media (min-width: 481px) and (max-width: 768px) {
+    .contact {
+      left: 0;
+      transform: none;
+      position: relative;
+      padding: 0 20px;
+    }
+
+    .contact_buttons {
+      margin-top: 3rem;
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .contact_buttons {
+      gap: 4rem;
+      margin-top: 4rem;
     }
   }
 }

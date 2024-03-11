@@ -3,9 +3,11 @@ import LinkedinIcon from "../../assets/linkedin.svg?react";
 import GithubIcon from "../../assets/github.svg?react";
 import GmailIcon from "../../assets/gmail.svg?react";
 import PhoneIcon from "../../assets/phone.svg?react";
-import { ToastContainer } from "react-toastify";
+import Toast from "@/components/Toast";
 
 const Contact = () => {
+  const toaster = Toast();
+
   const buttonHandler = (location: string) => {
     switch (location) {
       case "linkedin":
@@ -15,17 +17,26 @@ const Contact = () => {
         window.open("https://github.com/padmanvinay");
         break;
       case "gmail":
-        navigator.clipboard.writeText("vinaypadman111@gmail.com");
+        navigator.clipboard.writeText("vinaypadman111@gmail.com").then(() => {
+          toaster({
+            message: "E-mail copied to clipboard",
+            autoClose: 2000,
+          });
+        });
         break;
       case "phone":
-        navigator.clipboard.writeText("+91-9745781390");
+        navigator.clipboard.writeText("+91-9745781390").then(() => {
+          toaster({
+            message: "Phone number copied to clipboard",
+            autoClose: 2000,
+          });
+        });
         break;
     }
   };
 
   return (
     <>
-      <ToastContainer />
       <div className={styles.contact}>
         <div>CONTACTS</div>
         <div className={styles.contact_buttons}>
@@ -51,7 +62,7 @@ const Contact = () => {
             <div className={styles.icon}>
               <PhoneIcon />
             </div>
-            <button onClick={() => buttonHandler("github")}>PHONE</button>
+            <button onClick={() => buttonHandler("phone")}>PHONE</button>
           </div>
         </div>
       </div>
