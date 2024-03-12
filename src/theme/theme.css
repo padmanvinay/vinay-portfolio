@@ -1,0 +1,15 @@
+.darkTheme {
+  --header: #2c2a2a;
+  --white: #fff;
+  --black: #000;
+  --pageContent: #232121;
+  --word: #fff;
+}
+
+.lightTheme {
+  --header: #edebe8;
+  --white: #fff;
+  --black: #000;
+  --pageContent: #f5f3f0;
+  --word: #000;
+}

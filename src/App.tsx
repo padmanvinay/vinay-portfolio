@@ -1,20 +1,12 @@
 import { Outlet } from "react-router-dom";
 import { useAppSelector } from "./redux/hooks";
-import { useEffect } from "react";
+import "./theme/theme.css";
 
 function App() {
   const darkmode = useAppSelector((state) => state.darkmode.darkMode);
-  useEffect(() => {
-    if (darkmode) {
-      import("./theme/dark/style.css");
-    }
-    if (!darkmode) {
-      import("./theme/light/style.css");
-    }
-  }, [darkmode]);
 
   return (
-    <div>
+    <div className={darkmode ? "darkTheme" : "lightTheme"}>
       <Outlet />
     </div>
   );
