@@ -5,7 +5,7 @@ type DarkModeState = {
 };
 
 const initialState: DarkModeState = {
-  darkMode: false,
+  darkMode: true,
 };
 
 const DarkModeSlice = createSlice({

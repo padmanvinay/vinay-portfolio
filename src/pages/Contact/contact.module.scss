@@ -8,6 +8,10 @@
   position: absolute;
   width: 100%;
   color: var(--word);
+  font-family: "poppins";
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
 
   .contact_container {
     filter: grayscale(100%);
@@ -22,9 +26,11 @@
     display: flex;
     gap: 6rem;
     margin-top: 5rem;
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-size: 1.8rem;
+    font-weight: 400;
+    font-family: "poppins";
     color: var(--word);
+    align-items: center;
 
     .icon {
       display: flex;
@@ -65,5 +71,14 @@
       gap: 4rem;
       margin-top: 4rem;
     }
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

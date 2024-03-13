@@ -1,0 +1,82 @@
+.work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5rem;
+  font-family: "poppins";
+  gap: 3rem;
+
+  &_container {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    height: 10rem;
+    border-radius: 1.2rem;
+    padding-bottom: 10rem;
+    background-color: var(--work);
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+
+    &_left {
+      width: 30rem;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      color: var(--word);
+      gap: 0.5rem;
+      .company_name {
+        font-weight: 500;
+        font-size: 2rem;
+      }
+    }
+
+    &_right {
+      width: 30rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: var(--word);
+      .role {
+        font-weight: 500;
+        font-size: x-large;
+      }
+    }
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .work {
+    padding-top: 3rem;
+  }
+
+  .work_container {
+    flex-direction: column;
+    height: auto;
+    padding-bottom: 0;
+  }
+
+  .work_container_left,
+  .work_container_right {
+    width: 18rem;
+    align-items: center;
+    padding-bottom: 2rem;
+
+    .company_name {
+      font-size: large;
+    }
+
+    .role {
+      font-size: medium;
+    }
+  }
+}
