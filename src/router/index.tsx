@@ -8,6 +8,7 @@ import Home from "../pages/Home";
 import Contact from "../pages/Contact";
 import Work from "../pages/Work";
 import PageContent from "@/components/PageContent";
+import Skills from "@/pages/Skills";
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,11 @@ const router = createBrowserRouter([
             path: "work",
             element: <Work />,
           },
+          {
+            path: "skills",
+            element: <Skills />,
+          },
+
           {
             path: "contact",
             element: <Contact />,

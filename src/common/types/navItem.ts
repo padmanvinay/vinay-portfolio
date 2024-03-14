@@ -1,4 +1,4 @@
-export type PageTypes = "home" | "contact" | "work";
+export type PageTypes = "home" | "contact" | "work" | "skills";
 
 export type NavItem = {
   name: PageTypes;
