@@ -1,7 +1,11 @@
+import styles from "./home.module.scss";
+
 const Home = () => {
   return (
     <div>
-      <h1 className="text-3xl font-bold underline">Home</h1>
+      <div className={styles.title}>
+        <h1 className={styles.title_name}>Vinay Padman</h1>
+      </div>
     </div>
   );
 };

@@ -24,7 +24,7 @@ const Work = () => {
           </div>
           <div className={styles.work_container_right}>
             <div className={styles.role}>{item.role}</div>
-            <div>{item.summary}</div>
+            <div className={styles.summary}>{item.summary}</div>
           </div>
         </div>
       ))}

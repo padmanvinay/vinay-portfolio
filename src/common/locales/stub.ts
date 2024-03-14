@@ -7,9 +7,10 @@ export const Experience_stub = [
     joinYear: "2023",
     resignYear: "Present",
     location: "Trivandrum",
-    role: "Software Development Engineer 1",
+    role: "Software Development Engineer-1",
     logo: CSLogo,
-    summary: "gg gg gg ",
+    summary:
+      "At CareStack, I specialize in crafting dynamic user interfaces and driving innovation with React.js, JavaScript, TypeScript, and Electron. From designing sleek interfaces to contributing to impactful projects, pushing boundaries and delivering results.",
   },
   {
     companyName: "Thinkpalm",
