@@ -8,10 +8,10 @@
 }
 
 .lightTheme {
-  --header: #edebe8;
+  --header: #e2e5e9;
   --white: #fff;
   --black: #000;
-  --pageContent: #f5f3f0;
+  --pageContent: #e9ecef;
   --word: #000;
-  --work: #ebebeb;
+  --work: #f3f6f8;
 }
