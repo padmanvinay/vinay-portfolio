@@ -8,7 +8,7 @@ export const NAV_LINK_ITEMS: NavItem[] = [
   },
   {
     name: "work",
-    displayName: "Work",
+    displayName: "Experience",
     path: "work",
   },
   {

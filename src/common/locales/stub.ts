@@ -1,5 +1,6 @@
 import CSLogo from "../../assets/cs-logo.svg?react";
 import TPLogo from "../../assets/TP_logo.png";
+import ZOHO from "../../assets/ZO_logo.png";
 
 export const Experience_stub = [
   {
@@ -19,6 +20,17 @@ export const Experience_stub = [
     location: "Kochi",
     role: "Software Engineer",
     logo: TPLogo,
-    summary: "gg gg gg ",
+    summary:
+      "At ThinkPalm, I'm immersed in the world of .NET Core, PostgreSQL, and C#. As a software engineer, I thrive on designing robust solutions and driving innovation through my expertise in these technologies. From architecting efficient databases to developing scalable applications, ",
+  },
+  {
+    companyName: "Zoho",
+    joinYear: "2022",
+    resignYear: "2022",
+    location: "Chennai",
+    role: "Intern Trainee",
+    logo: ZOHO,
+    summary:
+      "During my internship at Zoho, I delved into the realm of Java, honing my skills alongside seasoned professionals. Immersed in the Java ecosystem, I absorbed knowledge and expertise while contributing to various projects.",
   },
 ];

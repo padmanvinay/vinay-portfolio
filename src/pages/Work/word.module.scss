@@ -5,6 +5,7 @@
   padding-top: 5rem;
   font-family: "poppins";
   gap: 3rem;
+  padding-bottom: 5rem;
 
   &_container {
     display: flex;
@@ -28,6 +29,10 @@
       .company_name {
         font-weight: 500;
         font-size: large;
+      }
+      .logo {
+        max-width: 16rem;
+        max-height: 8rem;
       }
     }
 

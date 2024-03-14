@@ -2,4 +2,9 @@
   height: calc(100vh - 4rem);
   width: 100%;
   background-color: var(--pageContent);
+  overflow-y: auto;
+}
+
+.page::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
 }

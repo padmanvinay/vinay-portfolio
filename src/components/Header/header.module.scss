@@ -8,9 +8,15 @@
 
   &_name {
     margin-left: 1rem;
+    font-size: x-large;
     font-family: "poppins";
     font-weight: 600;
     color: var(--word);
+    background-image: url(https://cdn.dribbble.com/users/1770290/screenshots/6220590/bg_82.gif);
+    background-size: cover;
+    color: transparent;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
   }
   &_routes {
     display: flex;
