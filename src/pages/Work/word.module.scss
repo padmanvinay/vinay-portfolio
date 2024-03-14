@@ -9,14 +9,14 @@
   &_container {
     display: flex;
     flex-direction: row;
-    padding: 10px;
+    padding: 6rem 0rem;
     height: 10rem;
     border-radius: 1.2rem;
-    padding-bottom: 10rem;
     background-color: var(--work);
     animation-name: fadeIn;
     animation-duration: 2s;
     animation-fill-mode: forwards;
+    align-items: center;
 
     &_left {
       width: 30rem;
@@ -27,7 +27,7 @@
       gap: 0.5rem;
       .company_name {
         font-weight: 500;
-        font-size: 2rem;
+        font-size: large;
       }
     }
 

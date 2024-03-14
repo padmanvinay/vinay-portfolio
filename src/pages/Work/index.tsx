@@ -7,12 +7,20 @@ const Work = () => {
       {Experience_stub.map((item, index) => (
         <div className={styles.work_container} key={index}>
           <div className={styles.work_container_left}>
-            <div>{item.logo}</div>
-            <div className={styles.company_name}>{item.companyName}</div>
-            <div className={styles.location}>{item.location}</div>
-            <div
+            <div>
+              {typeof item.logo === "string" ? (
+                <img src={item.logo} />
+              ) : (
+                <item.logo />
+              )}
+            </div>
+            {item.companyName === "Carestack" && (
+              <div className={styles.company_name}>{item.companyName}</div>
+            )}
+            {/* <div className={styles.location}>{item.location}</div> */}
+            {/* <div
               className={styles.year}
-            >{`${item.joinYear} - ${item.resignYear}`}</div>
+            >{`${item.joinYear} - ${item.resignYear}`}</div> */}
           </div>
           <div className={styles.work_container_right}>
             <div className={styles.role}>{item.role}</div>

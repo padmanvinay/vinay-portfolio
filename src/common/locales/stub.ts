@@ -1,3 +1,6 @@
+import CSLogo from "../../assets/cs-logo.svg?react";
+import TPLogo from "../../assets/TP_logo.png";
+
 export const Experience_stub = [
   {
     companyName: "Carestack",
@@ -5,7 +8,7 @@ export const Experience_stub = [
     resignYear: "Present",
     location: "Trivandrum",
     role: "Software Development Engineer 1",
-    logo: "",
+    logo: CSLogo,
     summary: "gg gg gg ",
   },
   {
@@ -14,7 +17,7 @@ export const Experience_stub = [
     resignYear: "2023",
     location: "Kochi",
     role: "Software Engineer",
-    logo: "",
+    logo: TPLogo,
     summary: "gg gg gg ",
   },
 ];
