@@ -1,7 +1,6 @@
 import { VIN_NAME } from "@/common/locales/header.locale";
 import Navbar from "../Navbar";
 import styles from "./header.module.scss";
-import DarkMode from "../DarkmodeToggle";
 
 const Header = () => {
   return (
@@ -11,7 +10,7 @@ const Header = () => {
       </div>
       <div className={styles.header_routes}>
         <Navbar />
-        <DarkMode />
+        {/* <DarkMode /> */}
       </div>
     </div>
   );
