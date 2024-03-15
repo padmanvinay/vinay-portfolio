@@ -1,10 +1,6 @@
-.page {
-  height: calc(100vh - 4rem);
-  width: 100%;
-  background-color: var(--pageContent);
-  overflow-y: auto;
+.pages {
 }
 
-.page::-webkit-scrollbar {
+.pages::-webkit-scrollbar {
   display: none; /* Safari and Chrome */
 }

@@ -5,6 +5,8 @@
   background-color: var(--header);
   height: 4rem;
   align-items: center;
+  z-index: 500000;
+  position: relative;
 
   &_name {
     margin-left: 1rem;
@@ -17,6 +19,7 @@
     color: transparent;
     -moz-background-clip: text;
     -webkit-background-clip: text;
+    z-index: 200;
   }
   &_routes {
     display: flex;
