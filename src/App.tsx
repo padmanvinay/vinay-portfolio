@@ -8,19 +8,21 @@ function App() {
 
   return (
     <div className={darkmode ? "darkTheme" : "lightTheme"}>
-      <AnimatedCursor
-        innerSize={4}
-        outerSize={18}
-        innerScale={1}
-        outerScale={2}
-        outerAlpha={0}
-        innerStyle={{
-          backgroundColor: "white",
-        }}
-        outerStyle={{
-          border: "2px solid white",
-        }}
-      />
+      <div className="hidden md:block">
+        <AnimatedCursor
+          innerSize={4}
+          outerSize={18}
+          innerScale={1}
+          outerScale={2}
+          outerAlpha={0}
+          innerStyle={{
+            backgroundColor: "white",
+          }}
+          outerStyle={{
+            border: "2px solid white",
+          }}
+        />
+      </div>
       <Outlet />
     </div>
   );
