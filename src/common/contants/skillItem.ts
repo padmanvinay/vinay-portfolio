@@ -6,6 +6,10 @@ import HTMLLogo from "../../assets/html.svg?react";
 import SCSSLogo from "../../assets/scss.svg?react";
 import SQLLogo from "../../assets/sql.svg?react";
 import NestLogo from "../../assets/nest.svg?react";
+import AWSLogo from "../../assets/aws.svg?react";
+import GitLogo from "../../assets/git.svg?react";
+import ReduxLogo from "../../assets/redux.svg?react";
+import CLogo from "../../assets/c.svg?react";
 
 export const SkillItems = [
   {
@@ -39,5 +43,21 @@ export const SkillItems = [
   {
     name: "Nest JS",
     logo: NestLogo,
+  },
+  {
+    name: "AWS",
+    logo: AWSLogo,
+  },
+  {
+    name: "Git",
+    logo: GitLogo,
+  },
+  {
+    name: "Redux",
+    logo: ReduxLogo,
+  },
+  {
+    name: "C#",
+    logo: CLogo,
   },
 ];
