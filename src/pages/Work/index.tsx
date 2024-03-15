@@ -1,5 +1,6 @@
 import { Experience_stub } from "@/common/locales/stub";
 import styles from "./word.module.scss";
+import { TextGenerateEffect } from "@/components/UI/TextGenerator";
 
 const Work = () => {
   return (
@@ -25,7 +26,9 @@ const Work = () => {
           </div>
           <div className={styles.work_container_right}>
             <div className={styles.role}>{item.role}</div>
-            <div className={styles.summary}>{item.summary}</div>
+            <div className={styles.summary}>
+              <TextGenerateEffect words={item.summary} />
+            </div>
           </div>
         </div>
       ))}

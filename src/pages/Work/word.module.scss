@@ -18,6 +18,41 @@
     animation-duration: 2s;
     animation-fill-mode: forwards;
     align-items: center;
+    --border-angle: 0turn; // For animation.
+    --main-bg: conic-gradient(
+      from var(--border-angle),
+      #213,
+      #112 5%,
+      #112 60%,
+      #213 95%
+    );
+
+    border: solid 3px transparent;
+    border-radius: 2em;
+    --gradient-border: conic-gradient(
+      from var(--border-angle),
+      transparent 25%,
+      #08f,
+      rgb(255, 0, 212) 99%,
+      transparent
+    );
+
+    background: 
+      // padding-box clip this background in to the overall element except the border.
+      var(--main-bg) padding-box,
+      // border-box extends this background to the border space
+      var(--gradient-border) border-box,
+      // Duplicate main background to fill in behind the gradient border. You can remove this if you want the border to extend "outside" the box background.
+      var(--main-bg) border-box;
+
+    background-position: center center;
+
+    animation: bg-spin 2s linear infinite;
+    @keyframes bg-spin {
+      to {
+        --border-angle: 1turn;
+      }
+    }
 
     &_left {
       width: 30rem;
@@ -44,9 +79,13 @@
       color: var(--word);
       gap: 0.4rem;
       .role {
-        font-weight: 500;
+        font-weight: 700;
         font-size: x-large;
-        text-decoration: underline;
+        background-image: url(https://cdn.dribbble.com/users/1770290/screenshots/6220590/bg_82.gif);
+        background-size: cover;
+        color: transparent;
+        -moz-background-clip: text;
+        -webkit-background-clip: text;
       }
       .summary {
         font-weight: 200;
@@ -93,4 +132,10 @@
       font-size: medium;
     }
   }
+}
+
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
 }
