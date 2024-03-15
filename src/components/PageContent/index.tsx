@@ -8,12 +8,7 @@ const PageContent = () => {
   return (
     <>
       <Header />
-      <div
-        className={classNames(
-          "h-[calc(100vh-4rem)] overflow-y-auto z-[200] relative",
-          styles.pages
-        )}
-      >
+      <div className={classNames(styles.pages)}>
         <Outlet />
       </div>
       <BackgroundBeams />
