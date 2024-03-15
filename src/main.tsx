@@ -9,7 +9,10 @@ import store from "./redux/store.ts";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
-    <ToastContainer />
+    <ToastContainer
+      bodyClassName="relative z-[50000000]"
+      position="bottom-left"
+    />
     <Provider store={store}>
       <AppRouter />
     </Provider>
