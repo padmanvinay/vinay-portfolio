@@ -10,6 +10,9 @@
 }
 
 .title_name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
   background-size: cover;
   color: transparent;
@@ -18,4 +21,19 @@
   text-transform: uppercase;
   font-size: 120px;
   margin: 10px 0;
+}
+
+.home {
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

@@ -3,6 +3,7 @@
   overflow-y: auto;
   z-index: 200;
   position: relative;
+  background-color: var(--pageContent);
 }
 
 .pages::-webkit-scrollbar {
