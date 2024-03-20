@@ -8,6 +8,7 @@ export const Experience_stub = [
     joinYear: "2023",
     resignYear: "Present",
     location: "Trivandrum",
+    skills: ["React", "Javascript", "Typescript", "SCSS", "AWS", "ElectronJS"],
     role: "Software Development Engineer-1",
     logo: CSLogo,
     summary:
@@ -16,6 +17,7 @@ export const Experience_stub = [
   {
     companyName: "Thinkpalm",
     joinYear: "2022",
+    skills: [".net Core", "C#", "Postgres", "SQL"],
     resignYear: "2023",
     location: "Kochi",
     role: "Software Engineer",
@@ -26,6 +28,7 @@ export const Experience_stub = [
   {
     companyName: "Zoho",
     joinYear: "2022",
+    skills: ["Java"],
     resignYear: "2022",
     location: "Chennai",
     role: "Intern Trainee",

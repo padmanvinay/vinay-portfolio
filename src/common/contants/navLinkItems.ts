@@ -12,11 +12,6 @@ export const NAV_LINK_ITEMS: NavItem[] = [
     path: "work",
   },
   {
-    name: "skills",
-    displayName: "Skills",
-    path: "skills",
-  },
-  {
     name: "contact",
     displayName: "Contact",
     path: "contact",

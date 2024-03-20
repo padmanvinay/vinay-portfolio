@@ -2,6 +2,7 @@ import { Experience_stub } from "@/common/locales/stub";
 import styles from "./word.module.scss";
 import { TextGenerateEffect } from "@/components/UI/TextGenerator";
 import MovingBorder from "@/components/UI/MovingBorder";
+import MovingTag from "@/components/UI/MovingTag";
 
 const Work = () => {
   return (
@@ -21,10 +22,6 @@ const Work = () => {
                 item.companyName === "Zoho") && (
                 <div className={styles.company_name}>{item.companyName}</div>
               )}
-              {/* <div className={styles.location}>{item.location}</div> */}
-              {/* <div
-            className={styles.year}
-          >{`${item.joinYear} - ${item.resignYear}`}</div> */}
             </div>
             <div className={styles.work_container_right}>
               <div className={styles.role}>{item.role}</div>
@@ -33,6 +30,11 @@ const Work = () => {
               >{`${item.joinYear} - ${item.resignYear}`}</div>
               <div className={styles.summary}>
                 <TextGenerateEffect words={item.summary} />
+              </div>
+              <div className={styles.skills}>
+                {item.skills.map((item) => (
+                  <MovingTag>{item}</MovingTag>
+                ))}
               </div>
             </div>
           </div>
