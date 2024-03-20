@@ -3,7 +3,7 @@ import styles from "./loader.module.scss";
 
 const Loader = () => {
   return (
-    <div className="bg-black h-screen w-screen flex flex-col justify-center items-center gap-4">
+    <div className={styles.loader}>
       {
         <div className="text-red-600">
           <InfinitySpin width="200" color="#FFFFFF" />

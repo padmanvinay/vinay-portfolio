@@ -12,7 +12,7 @@
     align-items: center;
     background-color: var(--work);
     width: 70rem;
-    height:40rem;
+    height: 40rem;
     padding: 1rem;
     gap: 1rem;
 
@@ -38,23 +38,23 @@
       }
     }
   }
+}
 
-  @media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
+  .skills {
     &_inner {
+      width: auto;
       flex-direction: column;
-      align-items: center;
+      height: 100%;
 
       .photo {
         width: 100%;
-        height: auto;
+        height: 100%;
       }
 
       &_container {
         width: 100%;
-        grid-template-columns: 0.2fr 0.2fr;
-        column-gap: 5rem;
-        text-align: center;
-        align-items: center;
+        grid-template-columns: repeat(2, 1fr);
       }
     }
   }

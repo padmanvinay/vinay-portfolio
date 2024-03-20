@@ -8,3 +8,19 @@
   -moz-background-clip: text;
   -webkit-background-clip: text;
 }
+
+.loader {
+  background-color: var(--pageContent);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .name {
+    font-size: large;
+  }
+}
